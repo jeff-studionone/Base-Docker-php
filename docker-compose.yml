@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  web:
+    build:
+      context: .
+    container_name: projectname
+    network_mode: bridge
+    restart: on-failure
+    volumes:
+      - ./code:/var/www/html
+    environment:
+      VIRTUAL_HOST: projectname.docker

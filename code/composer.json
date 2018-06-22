@@ -1,0 +1,16 @@
+{
+    "name": "jeff/projectname",
+    "type": "project",
+    "require": {
+        "twig/twig": "~2.0"
+    },
+    "authors": [
+        {
+            "name": "Jeff",
+            "email": "yfreldragon@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"projectname\\": "src/"}
+    }
+}
