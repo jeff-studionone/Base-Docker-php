@@ -1,8 +1,10 @@
 {
-    "name": "jeff/projectname",
+    "name": "jeff/websockets",
     "type": "project",
     "require": {
-        "twig/twig": "~2.0"
+        "twig/twig": "~2.0",
+        "amphp/http-server": "^0.8.2",
+        "amphp/websocket": "^0.2.2"
     },
     "authors": [
         {

@@ -3,10 +3,10 @@ services:
   web:
     build:
       context: .
-    container_name: projectname
+    container_name: websockets
     network_mode: bridge
     restart: on-failure
     volumes:
       - ./code:/var/www/html
     environment:
-      VIRTUAL_HOST: projectname.docker
+      VIRTUAL_HOST: websockets.docker
