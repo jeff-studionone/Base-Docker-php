@@ -1,0 +1,19 @@
+[Unit]
+Description=Gearbox client websocket
+
+[Service]
+User=root
+Restart=on-failure
+RestartSec=10
+# Client Env Vars
+Environment=WS_TOKEN=HHUSE0jaf6oMGtFgbuNYHHNeiK9NgdVM
+Environment=WS_SERVER_TEXT=echo.websocket.org
+Environment=WS_SERVER_DEV=ws.dev.accelerator2.studionone.io
+Environment=WS_SERVER_PROD=ws.accelerator.tourismmedia.com.au
+# ENVIRONMENT_ID=gearbox-prod
+Environment=ENVIRONMENT_ID=vagrant
+# Exec
+ExecStart=/usr/bin/php -f /var/www/html/gearbox3/ws.php
+
+[Install]
+WantedBy=multi-user.target
